@@ -1,0 +1,36 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+        <form  #LoginForm="ngForm" (ngSubmit)="onSubmit(LoginForm)">
+                  <h2>Sign up Now  ! </h2>
+
+            <div class="form-group" >
+                <label for="userName">User Name</label>
+                <input type="text" id="userName" class="form-control" name="userName" ngModel required >
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" name="email" ngModel required email>
+            </div>
+            <div class="form-group">
+                <label for="password">password</label>
+                <input type="password" id="password" class="form-control" name="password" ngModel required minlength="6"> 
+            </div>
+            <div class="form-group" >
+                <label for="password">Confirm password</label>
+                <input type="password" id="password2" class="form-control" name="confirmPassword" ngModel required minlength="6">
+            </div>
+            
+            <div class="form-group">
+                <!-- [disabled]="!LoginForm.valid" -->
+                <button class="btn btn-success">Sign Up</button> |
+                <button class="btn btn-primary" type="button"  [routerLink]="['/login']">Switch to login</button>
+            </div>
+            
+        </form>
+    </div>
+    </div>
+           
+    </div>
+    

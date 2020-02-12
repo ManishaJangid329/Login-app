@@ -1,0 +1,48 @@
+
+  <!-- <div class="container" >
+    <div class="card-deck">
+      <div class="card text-white bg-dark"  *ngFor="let user of users$ ">
+      
+        <img class="card-img-top" src="https://source.unsplash.com/collection/{{user.id}}/1600x900">
+        <span class="d-inline p-2 bg-success text-black" style="width: 30%;">Score {{user.rt_score}}</span>
+        <div class="card-body">
+            <h4 class="card-title"><b>
+              <a routerLink="/details/{{user.id}}">{{user.title}} </a>
+            </b></h4>
+          <div class="card-text">
+            <ul>
+                <b>Directed by  : </b>{{user.director}}<br>
+                <b>Produced by : </b>{{user.producer}}<br>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><b>Release Date : </b>{{user.release_date}}<br></small>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div> -->
+  
+  <div class="container">
+    <div *ngFor="let user of users$  " style="border: 1px solid black;" >
+        <div> {{user | json }} </div>  <br>
+    </div>
+  </div>
+
+  
+     
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+   
+  
+     

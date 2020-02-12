@@ -3,8 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'solar-app';
+  title = 'Movie-Database';
+  loadedFeature="book" ;
+
+  onNavigate(feature :string  ){
+      this.loadedFeature=feature ;
+    
+  }
 }
